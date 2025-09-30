@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+</head>
+
+<body>
+    <form action="post">
+        <div class="username">
+            <label for="username">Enter Your Username</label>
+            <input type="text" placeholder="Enter Username" id="username" name="username" autofocus>
+
+            
+        </div>
+        <div class="gender">
+            <h3>Gender</h3>
+            <input type="radio" id="male" name="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="female">
+            <label for="female">Female</label>
+
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="agree">
+            <label for="agree">Are You agree</label>
+        </div>
+        <div class="textbox">
+            <label for="comment">Comments</label>
+            <br>
+            <textarea name="comment" id="comment" placeholder="Enter Your Comments" rows="5" cols="50"></textarea>
+        </div>
+        <div class="select">
+            <select name="fruits" >
+                <option value="python">Python</option>
+                <option value="c_increment">C++</option>
+                <option value="c">C langauge</option>
+                <option value="java">Java</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
