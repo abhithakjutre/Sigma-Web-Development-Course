@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 80vw;
+            height: 10vh;
+            background-color: aqua;
+            margin: auto;
+            box-sizing: border-box;
+            font-size: 3em;
+
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 80vw;
+            min-height: 80vh;
+            background-color: aqua;
+            margin: 35px auto;
+            box-sizing: border-box;
+
+        }
+
+        .container p{
+            font-size: 2rem;
+            width: 50%;
+        }
+        .myfont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            color: rgb(61, 61, 45);
+            font-size: 22px;
+            margin: 23px auto;
+            width: 100vmin;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">This is a box</div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit error provident tempore deserunt ipsam,
+            ullam sit id repellat cupiditate quod, earum cum, fuga itaque odit laboriosam placeat reiciendis doloribus
+            temporibus.
+        </p>
+        
+    </div>
+
+    <div class="myfont">
+        I am a container
+        
+    </div>
+</body>
+
+</html>
