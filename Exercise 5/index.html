@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage Layout Exercise 5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        header{
+            position: sticky;
+            top: 0;
+        }
+        main{
+            background-color:black;
+            color: white;
+            padding: 30px 30px;
+            height: 80vh;
+        }
+        ul{
+            background-color: rgb(252, 153, 255);
+            display: flex;
+        
+        }
+        ul li{
+            list-style: none;
+            padding: 20px 25px;
+        
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+        }
+        .containers{
+            display: inline-block;
+            background-color: green;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            height: 40vh;
+            width: 40vw;
+            margin: 50px;
+            background-color: rgb(48, 107, 216);
+            text-align: center;
+            text-justify: center;
+            
+        }
+        .box:first-child{
+            background-color: rgb(224, 163, 173);
+            
+        }
+        .addlogo{
+            display: inline;
+        }
+        .addlogo img{
+            display: inline;
+            height: 100px;
+            width: 100px;
+            border: 1px solid white;
+            border-radius: 50%;
+            position: fixed;
+            top: 85%;
+            left: 90%;
+        }
+        .box3{
+            font-size: 45px;
+            padding: 20px 50px;
+            align-items: center;
+            color: white;
+            border: 2px solid white;
+            border-radius: 20px;
+            position: relative;
+            top: 50px;
+            left: 20%;
+        }
+        footer{
+            background-color: white;
+            height: 100px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="addlogo"><img src="addlogo.png" alt="missing logo"></div>
+        <div class="containers">
+            <div class="box">Content 1</div>
+            <div class="box">Content 2</div>
+        </div>
+        <span class="box3">Welcome to this Sigma Web Development Express</span>
+    </main>
+    <footer>
+ 
+    </footer>
+</body>
+</html>

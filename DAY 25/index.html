@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Box</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: flex-start;
+            /* justify-content: center; */
+            height: 80vh;
+            flex-flow: row wrap;
+            gap: 30px;
+
+        }
+
+        .item {
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            flex-grow: 1;
+            background-color: blueviolet;
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+
+        </div>
+    </main>
+</body>
+
+</html>
