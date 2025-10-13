@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Top 10 Carousel</title>
+
+  <style>
+    :root {
+      --visible-cards: 4.5;
+      --card-gap: 1rem;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h2 {
+      margin-left: 0.5rem;
+    }
+
+    /* --- Carousel Layout --- */
+    .carousel-container {
+      position: relative;
+      overflow: visible;
+      /* ✅ allow numbers to overflow safely */
+    }
+
+    .carousel-track {
+      width: 50vw;
+      display: flex;
+      gap: 10px;
+      margin: auto;
+      padding: 50px 50px;
+      overflow: hidden;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      position: relative;
+    }
+
+    /* --- Card Styling --- */
+    .card {
+      position: relative;
+      height: 300px;
+      flex: 0 0 calc((100% / var(--visible-cards)) - var(--card-gap));
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      scroll-snap-align: start;
+      overflow: visible;
+      /* ✅ allows number to show outside the card */
+    }
+
+    .box{
+      display: flex;
+      gap: 50px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      z-index: 2;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 10px;
+    }
+
+    /* --- Netflix Top 10 Number Style --- */
+    .card-number {
+      position: absolute;
+      color: black;
+      bottom: -10px;
+      /* same position as before */
+      left: -30px;
+      /* same position as before */
+      font-size: 120px;
+      font-weight: bolder;
+      -webkit-text-stroke: 2px rgb(225, 225, 225);
+      z-index: 10;
+      line-height: 1;
+      pointer-events: none;
+      text-shadow: 0 0 1.5rem 24px rgba(0, 0, 0, 0.5);
+    }
+
+    /* --- Arrows --- */
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+      background:rgba(255, 255, 255, 0.1);
+      color: rgb(225, 225, 225);
+      font-size: 2rem;
+      width: 30px;
+      height: 80px;
+      border-radius: 7px;
+      cursor: pointer;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .carousel-container:hover .arrow {
+      opacity: 1;
+    }
+
+    .arrow-left {
+      left: 18vw;
+    }
+
+    .arrow-right {
+      left: 77vw;
+    }
+
+    .arrow:focus {
+      outline: 2px solid #fff;
+    }
+
+    /* --- Responsive behavior --- */
+    @media (max-width: 1024px) {
+      :root {
+        --visible-cards: 3.5;
+      }
+
+      .card-number {
+        font-size: 180px;
+        left: -25px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --visible-cards: 2.2;
+      }
+
+      .card-number {
+        font-size: 140px;
+        left: -20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      :root {
+        --visible-cards: 1.3;
+      }
+
+      .card-number {
+        font-size: 100px;
+        left: -15px;
+      }
+
+      .arrow {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.7);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="carousel-container">
+    <button class="arrow arrow-left" aria-label="Scroll Left">&#10094;</button>
+
+    <div class="carousel-track" id="carousel">
+
+      <div class="box">
+      <div class="card">
+        <div class="card-number" style="margin-left: 20px;">1</div>
+        <img src="Assets/movie1.webp" alt="" style="
+    margin-right: 10px;
+    padding-left: 10px;">
+      </div>
+      <div class="card">
+        <div class="card-number">2</div>
+        <img src="Assets/movie2.webp" alt="">
+      </div>
+      <div class="card">
+        <div class="card-number">3</div>
+        <img src="Assets/movie3.webp" alt="">
+      </div>
+      <div class="card">
+        <div class="card-number">4</div>
+        <img src="Assets/movie4.webp" alt="">
+      </div>
+      <div class="card">
+        <div class="card-number">5</div>
+        <img src="Assets/movie5.webp" alt="">
+      </div>
+      <div class="card">
+        <div class="card-number">6</div>
+        <img src="Assets/movie6.webp" alt="">
+      </div>
+      <div class="card">
+        <div class="card-number">7</div>
+        <img src="Assets/movie7.webp" alt="">
+      </div>
+      <div class="card">
+        <div class="card-number">8</div>
+        <img src="Assets/movie8.webp" alt="">
+      </div>
+      <div class="card">
+        <div class="card-number">9</div>
+        <img src="Assets/movie9.webp" alt="">
+      </div>
+      <div class="card">
+        <div class="card-number">10</div>
+        <img src="Assets/movie10.webp" alt="">
+      </div>
+    </div>
+    </div>
+
+    <button class="arrow arrow-right" aria-label="Scroll Right">&#10095;</button>
+  </div>
+
+  <script>
+    const track = document.getElementById('carousel');
+    const btnLeft = document.querySelector('.arrow-left');
+    const btnRight = document.querySelector('.arrow-right');
+
+    const updateCardWidth = () => {
+      const card = track.querySelector('.card');
+      return card.offsetWidth + parseFloat(getComputedStyle(track).gap);
+    };
+
+    btnLeft.addEventListener('click', () => {
+      track.scrollBy({ left: -updateCardWidth() * 4, behavior: 'smooth' });
+    });
+
+    btnRight.addEventListener('click', () => {
+      track.scrollBy({ left: updateCardWidth() * 4, behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+
+</html>

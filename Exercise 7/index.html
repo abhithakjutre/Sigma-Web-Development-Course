@@ -7,202 +7,14 @@
     <title>Exercise 6 Ultra Edit Navbar design</title>
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <style>
-        :root {
-            --text-color: #222;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: #fff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 30px;
-        }
-
-        ul li {
-            list-style: none;
-        }
-
-        a {
-            display: inline-flex;
-            text-decoration: none;
-            margin-top: 25px;
-            font-size: 16px;
-            color: #222;
-            font-weight: 400;
-        }
-
-        .icon {
-            display: inline-flex;
-            height: 20px;
-            font-size: 16px;
-            color: #222;
-            font-weight: 400;
-        }
-
-
-
-
-        li img {
-            margin-right: 120px;
-        }
-
-        .dbutton {
-            padding: 8px 20px;
-            border: 2px solid #222;
-            border-radius: 3px;
-            font-weight: 700 !important;
-            font-style: normal;
-            font-size: 15px;
-            margin-top: 15px;
-            margin-left: 140px;
-        }
-
-        .enicon {
-            display: inline-flex;
-            height: 30px;
-            font-size: 20px;
-            font-weight: 400;
-            margin-bottom: -10px;
-            margin-right: 5px;
-        }
-
-        .search {
-            transform: rotateY(180deg);
-        }
-
-        .maincontain {
-            margin-top: 45px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .maincontain h1 {
-            margin-bottom: 50px;
-            font-size: 48px;
-            font-weight: 400;
-            color: var(--text-color);
-
-        }
-
-        .maincontain span {
-            font-weight: bold;
-        }
-
-        .maincontain p {
-            color: var(--text-color);
-            font-size: 24px;
-            line-height: 1.3em;
-            width: 950px;
-            text-align: center;
-        }
-
-        .maincontain a {
-            color: #fff;
-            background: #00b6d1;
-            padding: 12px 10px;
-            margin: 0 auto;
-            border-radius: 5px;
-            font-weight: 700;
-            margin-top: 50px;
-        }
-
-        .fa {
-            padding-top: 3px;
-            padding-left: 10px;
-
-        }
-
-        .logobox {
-            margin-top: 100px;
-            width: 1000px;
-
-            align-items: center;
-            display: flex;
-        }
-
-        .logobox h3 {
-
-            font-size: 24px;
-            font-weight: 500;
-            color: #222;
-        }
-
-        .logobox span {
-            font-size: 14px;
-            font-weight: 400;
-            color: var(--text-color);
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            align-content:flex-start;
-            margin-top: 50px;
-            justify-content: center;
-            border: 2px solid red;
-            gap: 20px;
-        }
-
-        .item {
-            justify-content: flex-start;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f9f9f9;
-            width: 300px;
-            padding: 15px 12px;
-
-
-
-        }
-
-        .item h4 {
-            font-size: 11px;
-            color: var(--text-color);
-            font-weight: 400;
-        }
-
-        .item p {
-            color: var(--text-color);
-            font-size: 9px;
-            text-align: center;
-            width: 250px;
-         
-            overflow-wrap: break-word;
-            line-height: 1.3rem;
-        }
-
-        .item a {
-            margin-top: 40px;
-            background-color: #5cb85c;
-            color: #fff;
-            padding: 8px 16px;
-            font-size: 12px;
-            font-weight: 600;
-            border-radius: 6px;
-            margin-bottom: 10px;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Frame-1-2.png" alt=""></li>
+                <li><img src="images/mainlogo.png" alt=""></li>
                 <li><a href="#">Products
                         <svg class="icon" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -246,90 +58,224 @@
     </header>
     <main>
         <div class="maincontain">
-            <h1>Download <span> UltraEdit </span> for Mac and Linux <span><img
+            <h1 class="h1home">Download <span> UltraEdit </span> for Mac and Linux <span><img
                         src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png"
                         alt="missing images"></span></h1>
-            <p>Download and try UltraEdit for Mac or Linux <span>before</span> you buy it! This download is the full
+            <p class="phome">Download and try UltraEdit for Mac or Linux <span>before</span> you buy it! This download
+                is the full
                 version of the text editor for Mac and Linux and includes all features. UltraEdit will default to the
                 appropriate language based upon your system locale setting.</p>
             <a href="#"><i class="fa-brands fa-windows" style="position: relative; top: 3px;"></i> Download UE Windows
                 <i class="fa fa-arrow-right"></i></a>
-            <div class="langsection">
+
+            <div class="second">
                 <div class="logobox">
                     <img src="images/logo.png" alt="missing images">
                     <h3>Download UltraEdit <span>v2025.0.0.39 (released 2025-08-06) | Latest changes</span></h3>
                 </div>
+
                 <div class="container">
                     <div class="item">
                         <h3>English</h3>
+                        <h4 style="color: white;">English</h4>
                         <a class="card_button" href="#">Download 64-bit</a>
                         <h4>SHA256</h4>
                         <p>FC88DD0B44CF0A7DE31AE2C413D145E351ACCA7A6E7DF4A44BC4A34E5184378E</p>
                     </div>
                     <div class="item">
-                        <h3>English</h3>
+                        <h3>Deutsch</h3>
+                        <h4>German</h4>
                         <a class="card_button" href="#">Download 64-bit</a>
                         <h4>SHA256</h4>
-                        <p>FC88DD0B44CF0A7DE31AE2C413D145E351ACCA7A6E7DF4A44BC4A34E5184378E</p>
+                        <p>3652B8B1A9D20F9779E2C6A4CBF3DBEA46BE184BD7B99E9E2366ECC45819F845</p>
                     </div>
                     <div class="item">
-                        <h3>English</h3>
+                        <h3>Italiano</h3>
+                        <h4>Italian</h4>
                         <a class="card_button" href="#">Download 64-bit</a>
                         <h4>SHA256</h4>
-                        <p>FC88DD0B44CF0A7DE31AE2C413D145E351ACCA7A6E7DF4A44BC4A34E5184378E</p>
+                        <p>BAF3CBC4AB8E4425B2D0DE0235CA9C749C91E57B07D82524E06CF76AE46C45DC</p>
                     </div>
                     <div class="item">
-                        <h3>English</h3>
+                        <h3>Español</h3>
+                        <h4>Spanish</h4>
                         <a class="card_button" href="#">Download 64-bit</a>
                         <h4>SHA256</h4>
-                        <p>FC88DD0B44CF0A7DE31AE2C413D145E351ACCA7A6E7DF4A44BC4A34E5184378E</p>
+                        <p>0A791D355F3B9B08F6A8D3987FA524AA4C8FBEA8974FF197F67BAC529873B956</p>
                     </div>
                     <div class="item">
-                        <h3>English</h3>
+                        <h3>français</h3>
+                        <h4>French</h4>
                         <a class="card_button" href="#">Download 64-bit</a>
                         <h4>SHA256</h4>
-                        <p>FC88DD0B44CF0A7DE31AE2C413D145E351ACCA7A6E7DF4A44BC4A34E5184378E</p>
+                        <p>0137310489EECFB5CCA5951586967E3934BE5C8DE43059AE082402ECDEF68459</p>
                     </div>
                     <div class="item">
-                        <h3>English</h3>
+                        <h3>Português brasileiro</h3>
+                        <h4>Brazilian Portuguese</h4>
                         <a class="card_button" href="#">Download 64-bit</a>
                         <h4>SHA256</h4>
-                        <p>FC88DD0B44CF0A7DE31AE2C413D145E351ACCA7A6E7DF4A44BC4A34E5184378E</p>
+                        <p>4A92218408CFD5DC2000B38E7371FAE718C722A96B296067A282DCE7E601B74F</p>
                     </div>
                     <div class="item">
-                        <h3>English</h3>
+                        <h3>日本</h3>
+                        <h4>Japanese</h4>
                         <a class="card_button" href="#">Download 64-bit</a>
                         <h4>SHA256</h4>
-                        <p>FC88DD0B44CF0A7DE31AE2C413D145E351ACCA7A6E7DF4A44BC4A34E5184378E</p>
+                        <p>696614BAF75279E067E4D7B2C8DD2EF9175B66708D14DFBE880CC998D4C948C2</p>
                     </div>
                     <div class="item">
-                        <h3>English</h3>
+                        <h3>한국어</h3>
+                        <h4>Korean</h4>
                         <a class="card_button" href="#">Download 64-bit</a>
                         <h4>SHA256</h4>
-                        <p>FC88DD0B44CF0A7DE31AE2C413D145E351ACCA7A6E7DF4A44BC4A34E5184378E</p>
+                        <p>0A443FB65801651373704EB957A98FB074738AB93907089D88046F7414CD43F4</p>
                     </div>
                     <div class="item">
-                        <h3>English</h3>
+                        <h3>华语</h3>
+                        <h4>Chinese</h4>
                         <a class="card_button" href="#">Download 64-bit</a>
                         <h4>SHA256</h4>
-                        <p>FC88DD0B44CF0A7DE31AE2C413D145E351ACCA7A6E7DF4A44BC4A34E5184378E</p>
+                        <p>90859CA326C03423967AF3664305D39EA5332C2EF37F0ED46159EE8163AFAD4A</p>
                     </div>
                     <div class="item">
-                        <h3>English</h3>
+                        <h3>華語</h3>
+                        <h4>Traditional Chinese</h4>
                         <a class="card_button" href="#">Download 64-bit</a>
                         <h4>SHA256</h4>
-                        <p>FC88DD0B44CF0A7DE31AE2C413D145E351ACCA7A6E7DF4A44BC4A34E5184378E</p>
+                        <p>9A0EE6B3DC3BA1D8EBC99CEA2C5C9BDB624DD53C1695E749EA82EFFD38FD56F8</p>
                     </div>
-                    <div class="item">
-                        <h3>English</h3>
-                        <a class="card_button" href="#">Download 64-bit</a>
-                        <h4>SHA256</h4>
-                        <p>FC88DD0B44CF0A7DE31AE2C413D145E351ACCA7A6E7DF4A44BC4A34E5184378E</p>
+                </div>
+            </div>
+
+            <div class="third">
+                <div class="leftcontant">
+                    <h1 class="heading">Join the UltraEdit newsletter</h1>
+                    <p class="desc">Sign up for our newsletter and receive emails for the latest news, blogs, and
+                        special deals on
+                        UltraEdit. </p>
+                </div>
+                <div class="rightcontant">
+                    <div class="box">
+                        <h3>Subscribe to our emails</h3>
+                        <label for="email">Enter email address</label>
+                        <input width="100%" height="50px" type="email" name="email">
+                        <a href="#">SIGN UP</a>
                     </div>
+                </div>
+                <div class="bottomcontant">
+                    <h2>EXE or MSI?</h2>
+                    <p>The EXE builds of our products are the preferred download for most of our users, running Windows
+                        10 and later.
+                        <br> We make MSI builds available for bulk or silent deployments (command line, GPO, SCCM,
+                        etc.).<span>Get the UltraEdit MSI installer.</span>
+                    </p>
+                    <h2>Free trial period</h2>
+                    <p>This application comes with a free, fully functional 30 day trial period. After the trial period
+                        expires, you must <span>purchase a license</span> to continue using it.</p>
+                </div>
+            </div>
+
+            <div class="four">
+                <div class="gridbox">
+                    <div class="firstlist">
+                        <ul>
+                            <li>
+                                <p>What’s your language?</p>
+                            </li>
+                            <li><a href="#">Code editor (General)</a></li>
+                            <li><a href="#">Text editor</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">Unix shell scripts</a></li>
+                            <li><a href="#">PL/SQL</a></li>
+                            <li><a href="#">EDI</a></li>
+                            <li><a href="#">C++</a></li>
+                            <li><a href="#">PHP</a></li>
+                            <li><a href="#">XML</a></li>
+                            <li><a href="#">Markdown</a></li>
+                            <li><a href="#">SAS</a></li>
+                            <li><a href="#">Visual Basic (VB)</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="secondlist">
+                        <ul>
+                            <li>
+                                <p>What do you need to do?</p>
+                            </li>
+                            <li><a href="#">Edit large text files</a></li>
+                            <li><a href="#">Use secure and compliant software</a></li>
+                            <li><a href="#">Work with unique languages and formats</a></li>
+                            <li><a href="#">Edit hex and binary files</a></li>
+                            <li><a href="#">Reformat XML/JSON files</a></li>
+                            <li><a href="#">Massive find and replace operations </a></li>
+                            <li><a href="#">Edit via columns/blocks</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="thirdlist">
+                        <ul>
+                            <li>
+                                <p>What type of user are you?</p>
+                            </li>
+                            <li><a href="#">Programmer / Developer</a></li>
+                            <li><a href="#">Web Developer</a></li>
+                            <li><a href="#">Database Manager</a></li>
+                            <li><a href="#">System Administrator</a></li>
+                            <li><a href="#">Technical Writer</a></li>
+                            <li><a href="#">Editor / Publisher</a></li>
+                            <li><a href="#">Medical / Pharmaceutical</a></li>
+                        </ul>
+                    </div>
+                    <div class="fourlist">
+                        <ul>
+                            <li>
+                                <p>General</p>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">License Agreement</a></li>
+                            <li><a href="#">End of Life Policy</a></li>
+                            <li><a href="#">Libraries and Patents</a></li>
+                            <li><a href="#">Information Policy</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Uninstall Instructions</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Software Security</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="fivelist">
+                        <div class="container">
+                            <h3>Subscribe to Newsletter</h3>
+                            <p>Get the latest news on new releases, event, and developents.</p>
+                            <input placeholder="Enter email address..." type="email">
+                            <a href="#">SUBSCRIBE</a>
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
+
+        </div>
     </main>
+    <footer>
+        <div class="fbox">
+            <ul>
+                <li><img src="images/mainlogo.png" alt="missing image"></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter fa-2xl" style="color: #222;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github fa-2xl" style="color: #222;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube fa-2xl" style="color: #222;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f fa-2xl" style="color: #222;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #222;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin fa-2xl" style="color: #222;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-reddit fa-2xl" style="color: #222;"></i></a></li>
+            </ul>
+            <p>©2025 UltraEdit by Abhi-Coder. All rights reserved</p>
+        </div>  
+    </footer>
 </body>
 <script src="https://kit.fontawesome.com/01f7f5c999.js" crossorigin="anonymous"></script>
 

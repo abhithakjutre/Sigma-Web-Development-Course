@@ -1,0 +1,432 @@
+:root {
+    --text-color: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: inline-flex;
+    text-decoration: none;
+    margin-top: 25px;
+    font-size: 16px;
+    color: #222;
+    font-weight: 400;
+}
+
+.icon {
+    display: inline-flex;
+    height: 20px;
+    font-size: 16px;
+    color: #222;
+    font-weight: 400;
+}
+
+
+
+
+li img {
+    margin-right: 120px;
+}
+
+.dbutton {
+    padding: 8px 20px;
+    border: 2px solid #222;
+    border-radius: 3px;
+    font-weight: 700 !important;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 140px;
+}
+
+.enicon {
+    display: inline-flex;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: -10px;
+    margin-right: 5px;
+}
+
+.search {
+    transform: rotateY(180deg);
+}
+
+.maincontain {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.maincontain .h1home {
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--text-color);
+
+}
+
+.h1home span {
+    font-weight: bold;
+}
+
+.maincontain .phome {
+    color: var(--text-color);
+    font-size: 24px;
+    line-height: 1.3em;
+    width: 950px;
+    text-align: center;
+}
+
+.phome span {
+    font-weight: bold;
+}
+
+.maincontain>a {
+    text-decoration: none;
+    color: #fff;
+    background: #00b6d1;
+    padding: 12px 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.fa {
+    padding-top: 3px;
+    padding-left: 10px;
+
+}
+
+.logobox {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50vw;
+
+
+}
+
+.logobox h3 {
+
+    font-size: 24px;
+    font-weight: 500;
+    color: #222;
+}
+
+.logobox span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.second {
+    display: grid;
+    align-self: center;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    justify-items: center;
+    width: 55vw;
+    row-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    width: 300px;
+    padding: 15px 12px;
+
+
+
+}
+
+.item h4 {
+    font-size: 10px;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.item :nth-child(2) {
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: -25px;
+}
+
+
+.item>p {
+    color: var(--text-color);
+    font-size: 8px;
+    text-align: center;
+    width: 250px;
+
+    overflow-wrap: break-word;
+    line-height: 1.3rem;
+}
+
+.item a {
+    margin-top: 40px;
+    text-decoration: none;
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.third {
+    width: 100%;
+    color: #fff;
+    background-color: #222;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 0px;
+    gap: 60px 100px;
+}
+
+
+.leftcontant {
+    align-self: center;
+    justify-self: end;
+    width: 420px;
+
+
+
+}
+
+.leftcontant h1 {
+    text-align: center;
+    line-height: 3.5rem;
+    font-size: 24px;
+}
+
+.leftcontant p {
+    text-align: center;
+    line-height: 1.3rem;
+
+}
+
+.rightcontant {
+    justify-items: start;
+}
+
+.box {
+    width: 275px;
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.box h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 450;
+    color: #00b6d1;
+
+}
+
+.box label {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    font-weight: 400;
+    text-align: center;
+    color: #222;
+}
+
+.box input {
+    padding: 10px;
+    width: 250px;
+    height: 30px;
+    text-shadow: none;
+    background: #ffff;
+    font-size: 14px;
+    line-height: normal;
+    border: 1px solid;
+    border-color: rgba(51, 51, 51, .16);
+}
+
+.box a {
+    text-decoration: none;
+    background-color: #00b6d1;
+    border: #4daaf2;
+    color: #fff;
+
+    padding: 15px 100px;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 12px 18px -6px rgba(77, 170, 242, .37);
+    margin: 10px auto;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.bottomcontant {
+    margin-left: 24vw;
+    width: 100%;
+}
+
+.bottomcontant h2 {
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 2rem;
+}
+
+.bottomcontant p {
+    font-size: 16px;
+    line-height: 2.5rem;
+}
+
+.bottomcontant :nth-child(3) {
+    line-height: 3rem;
+}
+
+.bottomcontant :nth-child(4) {
+
+    line-height: 1.5rem;
+
+}
+
+.bottomcontant p span {
+    color: #00b6d1;
+}
+
+.four {
+    width: 100%;
+    color: #222;
+    background-color: #f9f9f9;
+}
+
+.gridbox {
+    display: grid;
+    justify-self: center;
+    gap: 30px;
+    padding: 80px 330px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+ul li p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3rem;
+    margin-bottom: 20px;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.fivelist>.container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container>h3 {
+    align-self: start;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.container>p {
+    font-size: 14px;
+}
+
+.container>input {
+    padding: 2px 10px;
+    color: #222;
+    height: 35px;
+    width: 180px;
+    border-radius: 7px;
+    border: 1px solid #22242626;
+    align-self: flex-start;
+}
+
+.container>a {
+    width: 40%;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #00b6d1;
+    border: #4daaf2;
+    border-radius: 7px;
+    color: #fff;
+    padding: 10px 60px;
+    font-weight: 700;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.fbox {
+    color: #222;
+    background-color: #f9f9f9;
+}
+
+.fbox ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.fbox>ul li img {
+    height: 55px;
+    margin-right: 500px;
+}
+
+.fbox ul li > a {
+    margin-right: 10px;
+}
+
+.fbox p{
+    font-size: 12px;
+    padding-bottom: 50px;
+    padding-left: 24vw;
+    padding-top: 20px;
+}

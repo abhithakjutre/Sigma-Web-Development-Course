@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation Exercise </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .ball {
+            height: 120px;
+            width: 120px;
+            border: none;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: red;
+            animation: top-bottom_animation 1s ease-out infinite alternate,
+            left-right_animation 3s linear infinite;
+        }
+
+        .container {
+            position: relative;
+            height: 80vh;
+            width: 80vw;
+            background-color: blue;
+        }
+
+        @keyframes top-bottom_animation {
+            to{
+                top: 0;
+                
+            }
+
+            from{
+                top: 85%;
+            }
+
+        }
+
+        @keyframes left-right_animation {
+            from{
+                left: 0;
+            }
+
+            to{
+                left: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
